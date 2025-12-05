@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Interactive XOR & Baudot Tool</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>XOR & Baudot Interactive Tool</h1>
+
+    <!-- XOR two messages -->
+    <section>
+      <h2>XOR Two Messages</h2>
+      <textarea id="msg1" rows="2" placeholder="Message 1"></textarea>
+      <textarea id="msg2" rows="2" placeholder="Message 2"></textarea>
+      <button id="computeXor">Compute XOR</button>
+      <textarea id="xorOutput" rows="2" readonly placeholder="XOR result in binary"></textarea>
+    </section>
+
+    <!-- Decode XOR using known message -->
+    <section>
+      <h2>Decode XOR with known message</h2>
+      <textarea id="xorInput" rows="2" placeholder="Paste XOR binary"></textarea>
+      <textarea id="knownMsg" rows="2" placeholder="Known message"></textarea>
+      <button id="decodeXorBtn">Decode</button>
+      <textarea id="decodedOutput" rows="2" readonly placeholder="Recovered plaintext"></textarea>
+    </section>
+
+    <!-- Baudot decoding -->
+    <section>
+      <h2>Baudot Decoder</h2>
+      <textarea id="baudotInput" rows="3" placeholder="Enter 5-bit groups"></textarea>
+      <button id="baudotBtn">Decode Baudot</button>
+      <textarea id="plaintextOutput" rows="3" readonly placeholder="Decoded plaintext"></textarea>
+    </section>
+  </div>
+  <script src="/static/main.js"></script>
+</body>
+</html>

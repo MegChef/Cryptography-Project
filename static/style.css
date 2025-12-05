@@ -1,0 +1,118 @@
+/* style.css */
+
+/* general body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* headings */
+h1, h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* dections */
+section, .section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+
+/* inputs */
+input[type="text"], input[type="number"], textarea, select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea[readonly] {
+    background-color: #eee;
+    color: #444;
+}
+
+/* buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* XOR result display */
+pre {
+    background-color: #222;
+    color: #0f0;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+/* footer */
+footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    table, th, td {
+        font-size: 12px;
+    }
+    
+    textarea {
+        font-size: 13px;
+    }
+}
